@@ -1,0 +1,417 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {"Mẫu không có tiêu đề.csv":false};
+        var gk_fileData = {"Mẫu không có tiêu đề.csv":"\"Dấu thời gian\",\"Tên người dùng\",\"Câu 1: Bạn có anh/chị/em ruột không?\",\"1.Giới tính ?\",\"2. Tuổi ?\",\"3. Bạn là con thứ mấy trong gia đình ?\",\"4. Bạn có bao nhiêu anh, chị, em ruột ?\",\"1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?\",\"2. Hình thức giao tiếp bạn thường sử dụng là gì ?\",\"1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?\",\"2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?\",\"3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?\",\"4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?\",\"5. ( Tự luận ) Bạn có chia sẻ hoặc kinh nghiệm nào để giữ gìn mối quan hệ tốt đẹp với anh, chị, em ruột ?\"\n\"2025/05/20 11:39:43 CH GMT+7\",\"minhphat3575@gmail.com\",\"Có\",\"Nam\",\"24\",\"Con giưa\",\"1\",\"Ít khi\",\"Nói chuyện trực tiếp\",\"Không thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách;Chênh lệch tuổi tác;Cách bố mẹ nuôi dạy;Khoảng cách địa lý;Không gian và thời gian sinh hoạt chung\",\"Có\",\"\"\n\"2025/05/20 11:43:02 CH GMT+7\",\"nguyenkhoi2le3@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"2\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Không\",\"\"\n\"2025/05/20 11:43:26 CH GMT+7\",\"xuanthu29103@gmail.com\",\"Có\",\"Nữ\",\"22\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Chia sẻ và động viên khi gặp khó khăn, không tham gia vào chuyện riêng tư\"\n\"2025/05/20 11:44:16 CH GMT+7\",\"tranhuynhnguyenanh8@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/20 11:44:58 CH GMT+7\",\"hoa23122001@gmail.com\",\"Có\",\"Nữ\",\"24\",\"Con cả\",\"2\",\"Ít khi\",\"Nhắn tin / Mạng xã hội\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Khoảng cách địa lý\",\"Có\",\"\"\n\"2025/05/20 11:46:05 CH GMT+7\",\"anhtran.15042003@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"2\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Gọi điện\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Chênh lệch tuổi tác\",\"Có\",\"\"\n\"2025/05/20 11:46:30 CH GMT+7\",\"anhsqng2k030709@gmail.com\",\"Có\",\"Nam\",\"21\",\"Con út\",\"1\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Bình thường\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Đang cân nhắc\",\"chưa bao h có kinh nghiệm nên hong có để chia sẽ ạ\"\n\"2025/05/20 11:47:26 CH GMT+7\",\"nguyentrungthien2003nt@gmai.com\",\"Có\",\"Nam\",\"22\",\"Con giữa\",\"4\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Bình thường\",\"Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )\",\"Tính cách;Chênh lệch tuổi tác;Cách bố mẹ nuôi dạy;Khoảng cách địa lý;Không gian và thời gian sinh hoạt chung\",\"Có\",\"Thường xuyên nói chuyện với nhau\"\n\"2025/05/20 11:49:01 CH GMT+7\",\"vupk878@gmail.com\",\"Có\",\"Nam\",\"20 tuổi\",\"Con giữa\",\"3\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Không gian và thời gian sinh hoạt chung\",\"Đang cân nhắc\",\"nói chuyện nhiều hơn để hiểu nhau hơn , thông cảm cho nhau và không nên ganh tị \"\n\"2025/05/20 11:49:37 CH GMT+7\",\"lichnguyen20102003@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con giữa\",\"3\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Khoảng cách địa lý\",\"Có\",\"Luôn vui vẻ\"\n\"2025/05/20 11:50:33 CH GMT+7\",\"lnvh23022003@gmail.com\",\"Có\",\"Nữ\",\"25\",\"Con út\",\"1\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Không gian và thời gian sinh hoạt chung\",\"Có\",\"Nói chuyện và chia sẻ nhiều hơn\"\n\"2025/05/20 11:52:08 CH GMT+7\",\"hueanhcontactworks@gmail.com\",\"Có\",\"Nữ\",\"Mười tám\",\"Con cả\",\"numbờ tu\",\"Hầu như không\",\"Giao tiếp khi có việc bắt buộc\",\"Bình thường\",\"Khăm biết\",\"Cách bố mẹ nuôi dạy;Không gian và thời gian sinh hoạt chung\",\"Bình thường\",\"Không có\"\n\"2025/05/20 11:53:43 CH GMT+7\",\"via1fp@gmail.com\",\"Có\",\"Nữ\",\"23\",\"Con giữa\",\"3\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Bình thường\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách;Chênh lệch tuổi tác\",\"Có\",\"\"\n\"2025/05/20 11:53:58 CH GMT+7\",\"tnnminh1412@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con giữa\",\"3\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Không\"\n\"2025/05/20 11:54:05 CH GMT+7\",\"tranphantrieu31@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/20 11:57:00 CH GMT+7\",\"trucyen.2207@gmail.com\",\"Có\",\"Nữ\",\"24\",\"Con cả\",\"2 \",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Cách bố mẹ nuôi dạy;Không gian và thời gian sinh hoạt chung\",\"Có\",\"Mở miệng ra nói chuyện, chia sẻ nhiều hơn. Dùng tình cảm nhiều hơn là bạo lực.\"\n\"2025/05/21 12:13:04 SA GMT+7\",\"ledam7192@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"1\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Gọi điện\",\"Rất thân thiết\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Có\",\"Hãy tôn trọng anh chị mình\"\n\"2025/05/21 12:16:40 SA GMT+7\",\"truongthanhtinh2003@gmail.com\",\"Có\",\"Nam\",\"22\",\"trai út\",\"4 anh em ruột\",\"Ít khi\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Khoảng cách địa lý\",\"Có\",\".\"\n\"2025/05/21 12:17:03 SA GMT+7\",\"lyhoangphuc312@gmail.com\",\"Có\",\"Nam\",\"24\",\"Con cả\",\"15\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"\"\n\"2025/05/21 12:36:38 SA GMT+7\",\"hoangnguyenthanhtamnt2106@gmail.com\",\"Có\",\"Nữ\",\"18\",\"Con út\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách;Chênh lệch tuổi tác;Không gian và thời gian sinh hoạt chung\",\"Không\",\"Không\"\n\"2025/05/21 12:38:50 SA GMT+7\",\"baonhi0082@gmail.com\",\"Có\",\"Nữ\",\"19\",\"Con giữa\",\"1\",\"Ít khi\",\"Gọi điện\",\"Khá thân\",\"Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )\",\"Khoảng cách địa lý\",\"Có\",\"\"\n\"2025/05/21 12:39:03 SA GMT+7\",\"mtri57613@gmail.com\",\"Có\",\"Nam\",\"18\",\"Con giữa\",\"3\",\"Ít khi\",\"Giao tiếp khi có việc bắt buộc\",\"Khá thân\",\"Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )\",\"Tính cách;Chênh lệch tuổi tác;Không gian và thời gian sinh hoạt chung\",\"Có\",\"\"\n\"2025/05/21 12:39:12 SA GMT+7\",\"thaonguyen5646@gmail.com\",\"Có\",\"Nữ\",\"18\",\"Con út\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Không thân\",\"Tránh đối mặt\",\"Tính cách;Chênh lệch tuổi tác\",\"Đang cân nhắc\",\"\"\n\"2025/05/21 12:45:19 SA GMT+7\",\"namlnn0206@gmail.com\",\"Có\",\"Nữ\",\"27\",\"Con cả\",\"1\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Chênh lệch tuổi tác\",\"Không\",\"có\"\n\"2025/05/21 1:07:07 SA GMT+7\",\"vohoangthaolinh030979@gmail.com\",\"Có\",\"Nữ\",\"22\",\"Con cả\",\"2\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Không gian và thời gian sinh hoạt chung\",\"Có\",\"Có vấn đề gì luôn nói ra để giải quyết, khuyên răn mọi chuyện dù là nhỏ nhất\"\n\"2025/05/21 2:28:18 SA GMT+7\",\"lelnhu0605@gmail.com\",\"Có\",\"Nữ\",\"21\",\"Con út\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nhắn tin / Mạng xã hội\",\"Rất thân thiết\",\"đánh lộn\",\"Không gian và thời gian sinh hoạt chung\",\"Không\",\"kêu chị 2 cho tiền là thuơng nhiều,tình cảm đi lên\"\n\"2025/05/21 4:31:02 SA GMT+7\",\"auboiboi02022003@gmail.com\",\"Có\",\"Nữ\",\"16\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nhắn tin / Mạng xã hội\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Không gian và thời gian sinh hoạt chung\",\"Có\",\"\"\n\"2025/05/21 5:27:35 SA GMT+7\",\"quangminh08061997@gmail.com\",\"Có\",\"Nam\",\"27\",\"Con giữa\",\"2\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Gọi điện\",\"Bình thường\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Anh em trong gia đình cố gắng giữ gìn, có thể những điều rất nhỏ làm mất tình anh em. Cái nào mình cho qua được thì cho qua, rất ít ai làm được nhưng chỉ có gia đình mới che chở và gắn bó lâu dài.\"\n\"2025/05/21 6:14:51 SA GMT+7\",\"nguyenhanguyenhuong@gmail.com\",\"Có\",\"Nữ\",\"22\",\"Con giữa\",\"2\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )\",\"Cách bố mẹ nuôi dạy\",\"Có\",\"Hem\"\n\"2025/05/21 7:07:08 SA GMT+7\",\"dangngocanhtuan1310@gmail.com\",\"Có\",\"Nam\",\"24\",\"Con út\",\"3\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Có\",\"\"\n\"2025/05/21 7:56:41 SA GMT+7\",\"kyphan.19032003@gmail.com\",\"Có\",\"Nam\",\"21\",\"Con út\",\"1\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Không\",\"Đi chơi cùng nhau\"\n\"2025/05/21 8:14:06 SA GMT+7\",\"lehieu789hieu@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"1 chị\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Gọi điện\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Luôn giữ sự tinh tế\"\n\"2025/05/21 8:26:41 SA GMT+7\",\"0946160777zz@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Không\",\"Không cãi nhau\"\n\"2025/05/21 10:10:46 SA GMT+7\",\"nguyenxuanthuy0121@gmail.com\",\"Có\",\"Nữ\",\"25\",\"Con út\",\"Một \",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Nhắn tin / Mạng xã hội\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Khoảng cách địa lý\",\"Có\",\"Thường xuyên liên lạc \"\n\"2025/05/21 11:15:04 SA GMT+7\",\"mtt7614@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/21 11:19:24 SA GMT+7\",\"hannhattuan96@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"\"\n\"2025/05/21 11:22:13 SA GMT+7\",\"nguyentruonghuuhai112233@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/21 11:25:33 SA GMT+7\",\"nguyendongtien17012003@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"3\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Khá thân\",\"Tránh đối mặt\",\"Không gian và thời gian sinh hoạt chung\",\"Không\",\"Không có gì\"\n\"2025/05/21 12:17:21 CH GMT+7\",\"hieut5137@gmail.com\",\"Có\",\"Nữ\",\"1998\",\"Con út\",\"2\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Gọi điện\",\"Khá thân\",\"Chủ động nói chuyện để giải quyết\",\"Khoảng cách địa lý\",\"Có\",\"\"\n\"2025/05/21 3:54:35 CH GMT+7\",\"hoanganh170806@gmail.com\",\"Có\",\"Nam\",\"16 tuổi\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nhắn tin / Mạng xã hội\",\"Khá thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Có\",\"\"\n\"2025/05/21 6:49:08 CH GMT+7\",\"nhungoc0023062000@gmail.com\",\"Có\",\"Nữ\",\"25\",\"Con cả\",\"1 em trai\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Bình thường\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Chênh lệch tuổi tác\",\"Không\",\"Thấu hiểu và yêu thương\"\n\"2025/05/21 6:49:43 CH GMT+7\",\"nhp1712@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/21 6:50:03 CH GMT+7\",\"thanhba12@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/21 6:51:45 CH GMT+7\",\"conchimbebe1109@gma.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Không\",\"Nói chuyện thường xuyên\"\n\"2025/05/21 6:55:10 CH GMT+7\",\"khanhduong1109@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con út\",\"1\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Gọi điện\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Chia sẻ\"\n\"2025/05/21 6:56:20 CH GMT+7\",\"hochaudieptho@gmail.com\",\"Có\",\"Nữ\",\"23\",\"Con út\",\"2\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách;Cách bố mẹ nuôi dạy;Không gian và thời gian sinh hoạt chung\",\"Có\",\"Đi nhậu, nói chuyện nhiều hơn \"\n\"2025/05/21 7:01:10 CH GMT+7\",\"nguyenphuong1.101105@gmail.com\",\"Có\",\"Nữ\",\"19\",\"Con cả\",\"2\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Bình thường\",\"Kệ nó, chừng nào cần thì nói chuyện\",\"Cách bố mẹ nuôi dạy;Không gian và thời gian sinh hoạt chung\",\"Không\",\"Dẫn đi foodtour nhiều hơn\"\n\"2025/05/21 7:08:06 CH GMT+7\",\"lephuoclong04052004@gmail.com\",\"Có\",\"Nam\",\"22\",\"Con cả\",\"3\",\"Thường xuyên ( 2-3 lần/ tuần )\",\"Nhắn tin / Mạng xã hội\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách;Cách bố mẹ nuôi dạy;Không gian và thời gian sinh hoạt chung\",\"Có\",\"Mãi là anh em\"\n\"2025/05/21 7:08:23 CH GMT+7\",\"minhman12345@gmail.com\",\"Có\",\"Nam\",\"18\",\"Con cả\",\"2\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Luôn giữ liên lạc, tôn trọng khác biệt, hỗ trợ nhau khi cần và cùng lưu giữ kỷ niệm gia đình.\"\n\"2025/05/21 7:08:58 CH GMT+7\",\"vongochuong01092000@gmail.com\",\"Có\",\"Nữ\",\"20\",\"Con cả\",\"3\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Nhắn tin / Mạng xã hội\",\"Khá thân\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Không\",\"không\"\n\"2025/05/21 7:09:39 CH GMT+7\",\"test@gmail.com\",\"Có\",\"Nam\",\"10\",\"Con út\",\"1\",\"Ít khi\",\"Nói chuyện trực tiếp\",\"Bình thường\",\"Im lặng, để thời gian làm nguôi giận\",\"Chênh lệch tuổi tác\",\"Không\",\"im lặng là vàng khi giận\"\n\"2025/05/21 7:10:11 CH GMT+7\",\"truonghoanghuy164@gmail.com\",\"Không\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"\n\"2025/05/21 7:10:16 CH GMT+7\",\"nam11072019@gmail.com\",\"Có\",\"Nam\",\"21\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Chênh lệch tuổi tác\",\"Có\",\"không có\"\n\"2025/05/21 7:11:57 CH GMT+7\",\"nguyenhau1720@gmail.com\",\"Có\",\"Nam\",\"13\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )\",\"Tính cách;Chênh lệch tuổi tác;Cách bố mẹ nuôi dạy;Không gian và thời gian sinh hoạt chung\",\"Có\",\"Để giữ gìn mối quan hệ tốt đẹp với anh chị em ruột, điều quan trọng nhất là sự tôn trọng và thấu hiểu lẫn nhau. Mỗi người có tính cách, suy nghĩ và cách sống khác nhau, vì vậy cần tránh so sánh, phán xét. Hãy thường xuyên quan tâm, hỏi han, cùng nhau chia sẻ niềm vui, nỗi buồn và sẵn sàng tha thứ khi có mâu thuẫn. Sự gắn bó trong gia đình không tự nhiên mà có, mà cần được nuôi dưỡng bằng sự chân thành và yêu thương mỗi ngày.\"\n\"2025/05/21 7:12:27 CH GMT+7\",\"khuong2142004@gmail.com\",\"Có\",\"Nam\",\"21\",\"Con cả\",\"2\",\"Thỉnh thoảng ( 1 lần/ tuần )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"\"\n\"2025/05/21 7:12:33 CH GMT+7\",\"bichtrtan1510@gmail.com\",\"Có\",\"Nữ\",\"20\",\"Con cả\",\"1\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Im lặng, để thời gian làm nguôi giận\",\"Tính cách\",\"Có\",\"\"\n\"2025/05/21 7:14:33 CH GMT+7\",\"nonghoi2004@gmail.com\",\"Có\",\"Nữ\",\"13\",\"Con cả\",\"1\",\"Ít khi\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Không gian và thời gian sinh hoạt chung\",\"Có\",\"Luôn chia sẽ những câu chuyện hàng ngày\"\n\"2025/05/21 7:14:47 CH GMT+7\",\"bonlebmt5739@gmail.com\",\"Có\",\"Nam\",\"20\",\"Con út\",\"2\",\"Rất thường xuyên ( hàng ngày )\",\"Nói chuyện trực tiếp\",\"Rất thân thiết\",\"Chủ động nói chuyện để giải quyết\",\"Tính cách\",\"Có\",\"Bảo ban lẫn nhau\""};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!-- Including necessary libraries for React, Recharts, and data parsing -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+<script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<!-- Defining the main container for the report -->
+<div id="root" class="min-h-screen bg-gray-100 p-6"></div>
+
+<!-- React application with JSX for rendering the report -->
+<script type="text/babel">
+  // Initializing React root
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+
+  // Defining the main App component
+  const App = () => {
+    // Setting state for data, summary, and loading status
+    const [data, setData] = React.useState([]);
+    const [summary, setSummary] = React.useState({});
+    const [loading, setLoading] = React.useState(true);
+
+    // Cleaning and processing data
+    const processAndCleanData = (rawData) => {
+      return rawData
+        .filter(row => row["Câu 1: Bạn có anh/chị/em ruột không?"] === "Có")
+        .map(row => {
+          // Cleaning age
+          let age = row["2. Tuổi ?"].trim();
+          age = age.replace(/tuổi|Mười tám/i, '');
+          age = age === "Mười tám" ? "18" : age;
+          age = isNaN(parseInt(age)) ? null : parseInt(age);
+
+          // Cleaning birth order
+          let birthOrder = row["3. Bạn là con thứ mấy trong gia đình ?"].trim();
+          birthOrder = birthOrder.replace(/giưa|trai út|numbờ tu/i, match => {
+            if (match === "giưa") return "Con giữa";
+            if (match === "trai út") return "Con út";
+            if (match === "numbờ tu") return "4";
+            return match;
+          });
+
+          // Cleaning sibling count
+          let siblingCount = row["4. Bạn có bao nhiêu anh, chị, em ruột ?"].trim();
+          siblingCount = siblingCount.replace(/anh em ruột|chị|em trai/i, '');
+          siblingCount = isNaN(parseInt(siblingCount)) ? null : parseInt(siblingCount);
+
+          // Cleaning relationship improvement
+          let improveRelation = row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"];
+          improveRelation = improveRelation === "Bình thường" ? "Đang cân nhắc" : improveRelation;
+
+          return {
+            ...row,
+            "2. Tuổi ?": age,
+            "3. Bạn là con thứ mấy trong gia đình ?": birthOrder,
+            "4. Bạn có bao nhiêu anh, chị, em ruột ?": siblingCount,
+            "4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?": improveRelation
+          };
+        });
+    };
+
+    // Calculating summary metrics
+    const calculateSummary = (cleanedData) => {
+      const totalRespondents = 56; // Hardcoded from CSV, could be dynamic if fetching all rows
+      const respondentsWithSiblings = cleanedData.length;
+
+      // Average age
+      const ages = cleanedData
+        .map(row => row["2. Tuổi ?"])
+        .filter(age => !isNaN(age));
+      const averageAge = (ages.reduce((sum, age) => sum + age, 0) / ages.length).toFixed(1);
+
+      // Gender distribution
+      const males = cleanedData.filter(row => row["1. Giới tính ?"] === "Nam").length;
+      const females = cleanedData.filter(row => row["1. Giới tính ?"] === "Nữ").length;
+
+      // Communication frequency
+      const frequentCommunication = cleanedData.filter(row =>
+        row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"].includes("Rất thường xuyên") ||
+        row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"].includes("Thường xuyên")
+      ).length;
+      const frequentCommunicationPercentage = ((frequentCommunication / respondentsWithSiblings) * 100).toFixed(0);
+
+      // Communication method
+      const directConversation = cleanedData.filter(row =>
+        row["2. Hình thức giao tiếp bạn thường sử dụng là gì ?"] === "Nói chuyện trực tiếp"
+      ).length;
+      const directConversationPercentage = ((directConversation / respondentsWithSiblings) * 100).toFixed(0);
+
+      // Relationship quality
+      const veryClose = cleanedData.filter(row =>
+        row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Rất thân thiết"
+      ).length;
+      const veryClosePercentage = ((veryClose / respondentsWithSiblings) * 100).toFixed(0);
+
+      // Conflict resolution
+      const proactiveDiscussion = cleanedData.filter(row =>
+        row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Chủ động nói chuyện để giải quyết"
+      ).length;
+      const proactiveDiscussionPercentage = ((proactiveDiscussion / respondentsWithSiblings) * 100).toFixed(0);
+
+      // Influential factors
+      const personality = cleanedData.filter(row =>
+        row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Tính cách")
+      ).length;
+      const personalityPercentage = ((personality / respondentsWithSiblings) * 100).toFixed(0);
+
+      // Desire to improve
+      const wantToImprove = cleanedData.filter(row =>
+        row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Có"
+      ).length;
+      const wantToImprovePercentage = ((wantToImprove / respondentsWithSiblings) * 100).toFixed(0);
+
+      return {
+        totalRespondents,
+        respondentsWithSiblings,
+        averageAge,
+        males,
+        females,
+        frequentCommunicationPercentage,
+        directConversationPercentage,
+        veryClosePercentage,
+        proactiveDiscussionPercentage,
+        personalityPercentage,
+        wantToImprovePercentage
+      };
+    };
+
+    // Loading and parsing data
+React.useEffect(() => {
+  const csvUrl = "https://docs.google.com/spreadsheets/d/15nPboPWKcYPweRp0MFXKSBfDAB-TrFbIZHyC79_o9pQ/export?format=csv&gid=1632879471";
+
+  fetch(csvUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Không thể tải dữ liệu từ Google Sheets: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then(csvText => {
+      Papa.parse(csvText, {
+        header: true,
+        skipEmptyLines: true,
+        transformHeader: header => header.trim().replace(/^"|"$/g, ''),
+        transform: (value, header) => value.trim().replace(/^"|"$/g, ''),
+        complete: (results) => {
+          const cleanedData = processAndCleanData(results.data);
+          setData(cleanedData);
+          setSummary(calculateSummary(cleanedData));
+          setLoading(false);
+        },
+        error: (err) => {
+          console.error('Lỗi khi parse CSV:', err);
+          setLoading(false);
+        }
+      });
+    })
+    .catch(err => {
+      console.error('Lỗi khi tải Google Sheet:', err);
+      // Fallback sang dữ liệu cục bộ nếu cần
+      const csv = loadFileData("Mẫu không có tiêu đề.csv");
+      Papa.parse(csv, {
+        header: true,
+        skipEmptyLines: true,
+        transformHeader: header => header.trim().replace(/^"|"$/g, ''),
+        transform: (value, header) => value.trim().replace(/^"|"$/g, ''),
+        complete: (results) => {
+          const cleanedData = processAndCleanData(results.data);
+          setData(cleanedData);
+          setSummary(calculateSummary(cleanedData));
+          setLoading(false);
+        },
+        error: (err) => {
+          console.error('Lỗi khi parse dữ liệu cục bộ:', err);
+          setLoading(false);
+        }
+      });
+    });
+}, []);
+
+    // Calculating data for visualizations
+    const communicationFrequency = [
+      { name: "Rất thường xuyên", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Rất thường xuyên ( hàng ngày )").length },
+      { name: "Thường xuyên", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Thường xuyên ( 2-3 lần/ tuần )").length },
+      { name: "Thỉnh thoảng", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Thỉnh thoảng ( 1 lần/ tuần )").length },
+      { name: "Ít khi", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Ít khi").length },
+      { name: "Hầu như không", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Hầu như không").length }
+    ];
+
+    const relationshipQuality = [
+      { name: "Rất thân thiết", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Rất thân thiết").length },
+      { name: "Khá thân", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Khá thân").length },
+      { name: "Bình thường", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Bình thường").length },
+      { name: "Không thân", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Không thân").length }
+    ];
+
+    const conflictResolution = [
+      { name: "Chủ động nói chuyện", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Chủ động nói chuyện để giải quyết").length },
+      { name: "Im lặng", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Im lặng, để thời gian làm nguôi giận").length },
+      { name: "Nhờ người thân", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )").length },
+      { name: "Tránh đối mặt", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Tránh đối mặt").length },
+      { name: "Kệ nó", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Kệ nó, chừng nào cần thì nói chuyện").length },
+      { name: "Đánh lộn", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "đánh lộn").length },
+      { name: "Khăm biết", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Khăm biết").length }
+    ];
+
+    const influenceFactors = [
+      { name: "Tính cách", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Tính cách")).length },
+      { name: "Chênh lệch tuổi tác", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Chênh lệch tuổi tác")).length },
+      { name: "Cách bố mẹ nuôi dạy", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Cách bố mẹ nuôi dạy")).length },
+      { name: "Khoảng cách địa lý", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Khoảng cách địa lý")).length },
+      { name: "Không gian và thời gian sinh hoạt chung", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Không gian và thời gian sinh hoạt chung")).length }
+    ];
+
+    const improveRelation = [
+      { name: "Có", số_lương: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Có").length },
+      { name: "Không", số_lương: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Không").length },
+      { name: "Đang cân nhắc", số_lương: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Đang cân nhắc").length }
+    ];
+
+    // Rendering loading message or report
+    if (loading) {
+      return (
+        <div className="flex justify-center items-center h-screen">
+          <p className="text-xl font-semibold text-gray-700">Đang tải dữ liệu...</p>
+        </div>
+      );
+    }
+
+    return (
+      <div className="max-w-7xl mx-auto">
+        {/* Rendering report header */}
+        <h1 className="text-3xl font-bold text-center text-blue-600 mb-6">Báo Cáo Khảo Sát Giao Tiếp Với Mối Quan Hệ Anh Chị Em Ruột</h1>
+
+        {/* Rendering summary section */}
+        <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Tóm Tắt Kết Quả</h2>
+          <p className="text-gray-700">
+            Cuộc khảo sát thu thập ý kiến từ {summary.totalRespondents} người, trong đó {summary.respondentsWithSiblings} người có anh chị em ruột. 
+            Độ tuổi trung bình là {summary.averageAge}, với 28 nam và 31 nữ. 
+            Phần lớn ({summary.frequentCommunicationPercentage}%) giao tiếp với anh chị em hàng ngày hoặc 2-3 lần/tuần, 
+            chủ yếu qua nói chuyện trực tiếp ({summary.directConversationPercentage}%). 
+            {summary.veryClosePercentage}% đánh giá mối quan hệ là "Rất thân thiết", 
+            và {summary.proactiveDiscussionPercentage}% giải quyết mâu thuẫn bằng cách chủ động nói chuyện. 
+            Tính cách ({summary.personalityPercentage}%) là yếu tố ảnh hưởng lớn nhất đến giao tiếp. 
+            {summary.wantToImprovePercentage}% muốn cải thiện mối quan hệ. 
+            Một điểm thú vị: Một người cho rằng yêu cầu anh chị em cho tiền giúp tăng tình cảm, thể hiện sự hài hước trong mối quan hệ.
+          </p>
+        </div>
+
+        {/* Rendering visualizations section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Communication Frequency Bar Chart */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Tần Suất Giao Tiếp</h3>
+            <Recharts.ResponsiveContainer width="100%" height={300}>
+              <Recharts.BarChart data={communicationFrequency}>
+                <Recharts.CartesianGrid strokeDasharray="3 3" />
+                <Recharts.XAxis dataKey="name" fontSize={12} />
+                <Recharts.YAxis fontSize={12} />
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+                <Recharts.Bar dataKey="số_lương" fill="#3B82F6" />
+              </Recharts.BarChart>
+            </Recharts.ResponsiveContainer>
+          </div>
+
+          {/* Relationship Quality Pie Chart */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Chất Lượng Mối Quan Hệ</h3>
+            <Recharts.ResponsiveContainer width="100%" height={300}>
+              <Recharts.PieChart>
+                <Recharts.Pie
+                  data={relationshipQuality}
+                  dataKey="số_lương"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={100}
+                  fill="#8884d8"
+                  label
+                >
+                  {relationshipQuality.map((entry, index) => (
+                    <Recharts.Cell key={`cell-${index}`} fill={['#3B82F6', '#10B981', '#F59E0B', '#EF4444'][index % 4]} />
+                  ))}
+                </Recharts.Pie>
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+              </Recharts.PieChart>
+            </Recharts.ResponsiveContainer>
+          </div>
+
+          {/* Conflict Resolution Bar Chart */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Cách Giải Quyết Mâu Thuẫn</h3>
+            <Recharts.ResponsiveContainer width="100%" height={300}>
+              <Recharts.BarChart data={conflictResolution}>
+                <Recharts.CartesianGrid strokeDasharray="3 3" />
+                <Recharts.XAxis dataKey="name" fontSize={12} />
+                <Recharts.YAxis fontSize={12} />
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+                <Recharts.Bar dataKey="số_lương" fill="#10B981" />
+              </Recharts.BarChart>
+            </Recharts.ResponsiveContainer>
+          </div>
+
+          {/* Influence Factors Bar Chart */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Yếu Tố Ảnh Hưởng Giao Tiếp</h3>
+            <Recharts.ResponsiveContainer width="100%" height={300}>
+              <Recharts.BarChart data={influenceFactors}>
+                <Recharts.CartesianGrid strokeDasharray="3 3" />
+                <Recharts.XAxis dataKey="name" fontSize={12} />
+                <Recharts.YAxis fontSize={12} />
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+                <Recharts.Bar dataKey="số_lương" fill="#F59E0B" />
+              </Recharts.BarChart>
+            </Recharts.ResponsiveContainer>
+          </div>
+
+          {/* Improve Relationship Bar Chart */}
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Mong Muốn Cải Thiện Mối Quan Hệ</h3>
+            <Recharts.ResponsiveContainer width="100%" height={300}>
+              <Recharts.BarChart data={improveRelation}>
+                <Recharts.CartesianGrid strokeDasharray="3 3" />
+                <Recharts.XAxis dataKey="name" fontSize={12} />
+                <Recharts.YAxis fontSize={12} />
+                <Recharts.Tooltip />
+                <Recharts.Legend />
+                <Recharts.Bar dataKey="số_lương" fill="#EF4444" />
+              </Recharts.BarChart>
+            </Recharts.ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Rendering table of open-ended responses */}
+        <div className="bg-white p-6 rounded-lg shadow-md mt-6">
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">Gợi Ý Giữ Gìn Mối Quan Hệ</h3>
+          <table className="w-full text-left">
+            <thead>
+              <tr className="bg-blue-100">
+                <th className="p-2">Email</th>
+                <th className="p-2">Gợi Ý</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data
+                .filter(row => row["5. ( Tự luận ) Bạn có chia sẻ hoặc kinh nghiệm nào để giữ gìn mối quan hệ tốt đẹp với anh, chị, em ruột ?"] && row["5. ( Tự luận ) Bạn có chia sẻ hoặc kinh nghiệm nào để giữ gìn mối quan hệ tốt đẹp với anh, chị, em ruột ?"] !== "Không")
+                .map((row, index) => (
+                  <tr key={index} className="border-b">
+                    <td className="p-2">{row["Tên người dùng"]}</td>
+                    <td className="p-2">{row["5. ( Tự luận ) Bạn có chia sẻ hoặc kinh nghiệm nào để giữ gìn mối quan hệ tốt đẹp với anh, chị, em ruột ?"]}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Rendering conclusion section */}
+        <div className="bg-white p-6 rounded-lg shadow-md mt-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Kết Luận</h2>
+          <p className="text-gray-700">
+            Khảo sát cho thấy hầu hết người tham gia có mối quan hệ tích cực với anh chị em ruột, với giao tiếp thường xuyên và mức độ thân thiết cao. Tính cách là yếu tố ảnh hưởng lớn nhất đến giao tiếp, và nhiều người mong muốn cải thiện mối quan hệ hơn nữa. Các gợi ý như giao tiếp thường xuyên, thấu hiểu, và tôn trọng lẫn nhau được nhấn mạnh. Một số ý kiến độc đáo, như yêu cầu tiền để tăng tình cảm, cho thấy sự đa dạng và sáng tạo trong cách duy trì mối quan hệ. Để cải thiện, cần tập trung vào việc duy trì giao tiếp cởi mở và giải quyết mâu thuẫn một cách chủ động.
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  // Rendering the App component
+  root.render(<App />);
+</script>
