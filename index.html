@@ -222,42 +222,42 @@ React.useEffect(() => {
 
     // Calculating data for visualizations
     const communicationFrequency = [
-      { name: "Rất thường xuyên", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Rất thường xuyên ( hàng ngày )").length },
-      { name: "Thường xuyên", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Thường xuyên ( 2-3 lần/ tuần )").length },
-      { name: "Thỉnh thoảng", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Thỉnh thoảng ( 1 lần/ tuần )").length },
-      { name: "Ít khi", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Ít khi").length },
-      { name: "Hầu như không", số_lương: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Hầu như không").length }
+      { name: "Rất thường xuyên", số_lượng: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Rất thường xuyên ( hàng ngày )").length },
+      { name: "Thường xuyên", số_lượng: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Thường xuyên ( 2-3 lần/ tuần )").length },
+      { name: "Thỉnh thoảng", số_lượng: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Thỉnh thoảng ( 1 lần/ tuần )").length },
+      { name: "Ít khi", số_lượng: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Ít khi").length },
+      { name: "Hầu như không", số_lượng: data.filter(row => row["1. Bạn có thường xuyên giao tiếp với anh, chị, em ruột không ?"] === "Hầu như không").length }
     ];
 
     const relationshipQuality = [
-      { name: "Rất thân thiết", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Rất thân thiết").length },
-      { name: "Khá thân", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Khá thân").length },
-      { name: "Bình thường", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Bình thường").length },
-      { name: "Không thân", số_lương: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Không thân").length }
+      { name: "Rất thân thiết", số_lượng: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Rất thân thiết").length },
+      { name: "Khá thân", số_lượng: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Khá thân").length },
+      { name: "Bình thường", số_lượng: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Bình thường").length },
+      { name: "Không thân", số_lượng: data.filter(row => row["1. Bạn cảm thấy mối quan hệ giữa anh, chị, em ruột của mình như thế nào ?"] === "Không thân").length }
     ];
 
     const conflictResolution = [
-      { name: "Chủ động nói chuyện", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Chủ động nói chuyện để giải quyết").length },
-      { name: "Im lặng", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Im lặng, để thời gian làm nguôi giận").length },
-      { name: "Nhờ người thân", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )").length },
-      { name: "Tránh đối mặt", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Tránh đối mặt").length },
-      { name: "Kệ nó", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Kệ nó, chừng nào cần thì nói chuyện").length },
-      { name: "Đánh lộn", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "đánh lộn").length },
-      { name: "Khăm biết", số_lương: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Khăm biết").length }
+      { name: "Chủ động nói chuyện", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Chủ động nói chuyện để giải quyết").length },
+      { name: "Im lặng", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Im lặng, để thời gian làm nguôi giận").length },
+      { name: "Nhờ người thân", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Nhờ người thân can thiệp ( bố, mẹ, người thân trong gia đình )").length },
+      { name: "Tránh đối mặt", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Tránh đối mặt").length },
+      { name: "Kệ nó", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Kệ nó, chừng nào cần thì nói chuyện").length },
+      { name: "Đánh lộn", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "đánh lộn").length },
+      { name: "Khăm biết", số_lượng: data.filter(row => row["2. Khi có mâu thuẫn với anh, chị, em ruột bạn thường ?"] === "Khăm biết").length }
     ];
 
     const influenceFactors = [
-      { name: "Tính cách", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Tính cách")).length },
-      { name: "Chênh lệch tuổi tác", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Chênh lệch tuổi tác")).length },
-      { name: "Cách bố mẹ nuôi dạy", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Cách bố mẹ nuôi dạy")).length },
-      { name: "Khoảng cách địa lý", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Khoảng cách địa lý")).length },
-      { name: "Không gian và thời gian sinh hoạt chung", số_lương: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Không gian và thời gian sinh hoạt chung")).length }
+      { name: "Tính cách", số_lượng: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Tính cách")).length },
+      { name: "Chênh lệch tuổi tác", số_lượng: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Chênh lệch tuổi tác")).length },
+      { name: "Cách bố mẹ nuôi dạy", số_lượng: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Cách bố mẹ nuôi dạy")).length },
+      { name: "Khoảng cách địa lý", số_lượng: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Khoảng cách địa lý")).length },
+      { name: "Không gian và thời gian sinh hoạt chung", số_lượng: data.filter(row => row["3. Theo bạn, yếu tố nào ảnh hưởng nhiều nhất đến cách giao tiếp giữa bạn và anh, chị, em ruột ?"].includes("Không gian và thời gian sinh hoạt chung")).length }
     ];
 
     const improveRelation = [
-      { name: "Có", số_lương: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Có").length },
-      { name: "Không", số_lương: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Không").length },
-      { name: "Đang cân nhắc", số_lương: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Đang cân nhắc").length }
+      { name: "Có", số_lượng: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Có").length },
+      { name: "Không", số_lượng: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Không").length },
+      { name: "Đang cân nhắc", số_lượng: data.filter(row => row["4. Bạn có muốn cải thiện mối quan hệ với anh, chị, em ruột không ?"] === "Đang cân nhắc").length }
     ];
 
     // Rendering loading message or report
@@ -302,7 +302,7 @@ React.useEffect(() => {
                 <Recharts.YAxis fontSize={12} />
                 <Recharts.Tooltip />
                 <Recharts.Legend />
-                <Recharts.Bar dataKey="số_lương" fill="#3B82F6" />
+                <Recharts.Bar dataKey="số_lượng" fill="#3B82F6" />
               </Recharts.BarChart>
             </Recharts.ResponsiveContainer>
           </div>
@@ -314,7 +314,7 @@ React.useEffect(() => {
               <Recharts.PieChart>
                 <Recharts.Pie
                   data={relationshipQuality}
-                  dataKey="số_lương"
+                  dataKey="số_lượng"
                   nameKey="name"
                   cx="50%"
                   cy="50%"
@@ -342,7 +342,7 @@ React.useEffect(() => {
                 <Recharts.YAxis fontSize={12} />
                 <Recharts.Tooltip />
                 <Recharts.Legend />
-                <Recharts.Bar dataKey="số_lương" fill="#10B981" />
+                <Recharts.Bar dataKey="số_lượng" fill="#10B981" />
               </Recharts.BarChart>
             </Recharts.ResponsiveContainer>
           </div>
@@ -357,7 +357,7 @@ React.useEffect(() => {
                 <Recharts.YAxis fontSize={12} />
                 <Recharts.Tooltip />
                 <Recharts.Legend />
-                <Recharts.Bar dataKey="số_lương" fill="#F59E0B" />
+                <Recharts.Bar dataKey="số_lượng" fill="#F59E0B" />
               </Recharts.BarChart>
             </Recharts.ResponsiveContainer>
           </div>
@@ -372,7 +372,7 @@ React.useEffect(() => {
                 <Recharts.YAxis fontSize={12} />
                 <Recharts.Tooltip />
                 <Recharts.Legend />
-                <Recharts.Bar dataKey="số_lương" fill="#EF4444" />
+                <Recharts.Bar dataKey="số_lượng" fill="#EF4444" />
               </Recharts.BarChart>
             </Recharts.ResponsiveContainer>
           </div>
